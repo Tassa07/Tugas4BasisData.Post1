@@ -47,7 +47,7 @@
       border-radius: 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       padding: 30px;
-    }
+      
     h2 {
       color: #ff4081;
       margin-top: 20px;
@@ -68,16 +68,35 @@
       border-radius: 10px;
       margin-top: 10px;
     }
+    font-family: 'Poppins', sans-serif;
+      background-color: #ffe4ec;
+      text-align: center;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      color: #b3005e;
+    }
+    iframe {
+      width: 80%;
+      height: 400px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      border: none;
+    }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Post 1: ERD Intersection (5 Kasus)</h1>
-    <div class="youtube-link">
-      🎥 <a href="https://youtu.be/Sb9xI5fNY20?feature=shared" target="_blank">Tonton Penjelasan di YouTube</a>
-    </div>
-  </header>
+  <h2>🎬 Video Favorit Saya</h2>
+  <p>Tonton video YouTube langsung di blog ini!</p>
+  
+  <iframe 
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    title="YouTube video player" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
 
   <div class="container">
     <p><b>Intersection</b> pada ERD digunakan untuk merepresentasikan hubungan <i>many-to-many</i> yang dipecah menjadi dua relasi <i>one-to-many</i> menggunakan tabel penghubung (intersection entity).</p>
@@ -118,4 +137,5 @@
   </footer>
 
 </body>
+
 </html>
