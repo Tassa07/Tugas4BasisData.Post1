@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post 1 - ERD Intersection (5 Kasus)</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffe4ec;
+      margin: 0;
+      padding: 0;
+      color: #4a4a4a;
+    }
+    header {
+      background-color: #ffb6c1;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 3px solid #ff6f91;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    .youtube-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .youtube-link a {
+      display: inline-block;
+      background-color: #ff6f91;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .youtube-link a:hover {
+      background-color: #ff3366;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    h2 {
+      color: #ff4081;
+      margin-top: 20px;
+    }
+    .kasus {
+      margin-bottom: 25px;
+    }
+    footer {
+      text-align: center;
+      background-color: #ffb6c1;
+      color: white;
+      padding: 15px 0;
+      border-top: 3px solid #ff6f91;
+      margin-top: 40px;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Post 1: ERD Intersection (5 Kasus)</h1>
+    <div class="youtube-link">
+      🎥 <a href="https://youtu.be/Sb9xI5fNY20?feature=shared" target="_blank">Tonton Penjelasan di YouTube</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <p><b>Intersection</b> pada ERD digunakan untuk merepresentasikan hubungan <i>many-to-many</i> yang dipecah menjadi dua relasi <i>one-to-many</i> menggunakan tabel penghubung (intersection entity).</p>
+
+    <div class="kasus">
+      <h2>Kasus 1: Mahasiswa & Mata Kuliah</h2>
+      <p>Seorang <b>Mahasiswa</b> dapat mengambil banyak <b>Mata Kuliah</b>, dan satu <b>Mata Kuliah</b> juga bisa diambil oleh banyak <b>Mahasiswa</b>. Oleh karena itu, dibuat tabel penghubung bernama <b>KRS</b> untuk mencatat data pengambilan mata kuliah oleh mahasiswa.</p>
+      <img src="erd1.jpg" alt="ERD Mahasiswa dan Mata Kuliah">
+    </div>
+
+    <div class="kasus">
+      <h2>Kasus 2: Dokter & Pasien</h2>
+      <p>Seorang <b>Dokter</b> bisa memeriksa banyak <b>Pasien</b>, dan satu <b>Pasien</b> bisa diperiksa oleh beberapa <b>Dokter</b>. Untuk merekam data pemeriksaan, digunakan tabel penghubung <b>Pemeriksaan</b> yang menyimpan tanggal dan hasil diagnosa.</p>
+      <img src="erd2.jpg" alt="ERD Dokter dan Pasien">
+    </div>
+
+    <div class="kasus">
+      <h2>Kasus 3: Guru & Kelas</h2>
+      <p>Seorang <b>Guru</b> dapat mengajar di beberapa <b>Kelas</b>, dan satu <b>Kelas</b> juga bisa diajar oleh beberapa <b>Guru</b>. Relasi ini dihubungkan melalui tabel <b>JadwalMengajar</b> yang berisi hari dan jam mengajar.</p>
+      <img src="erd3.jpg" alt="ERD Guru dan Kelas">
+    </div>
+
+    <div class="kasus">
+      <h2>Kasus 4: Pelanggan & Produk</h2>
+      <p>Seorang <b>Pelanggan</b> dapat membeli banyak <b>Produk</b>, dan satu <b>Produk</b> bisa dibeli oleh banyak <b>Pelanggan</b>. Hubungan ini diwakili oleh tabel <b>Transaksi</b> yang mencatat jumlah dan tanggal pembelian.</p>
+      <img src="erd4.jpg" alt="ERD Pelanggan dan Produk">
+    </div>
+
+    <div class="kasus">
+      <h2>Kasus 5: Aktor & Film</h2>
+      <p>Seorang <b>Aktor</b> bisa bermain di banyak <b>Film</b>, dan satu <b>Film</b> bisa dibintangi oleh banyak <b>Aktor</b>. Untuk mencatat siapa memerankan siapa, digunakan tabel penghubung <b>Peran</b>.</p>
+      <img src="erd5.jpg" alt="ERD Aktor dan Film">
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Post 1 - ERD Intersection by Tassa Safitri</p>
+  </footer>
+
+</body>
+</html>
