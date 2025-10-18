@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
       color: #4a4a4a;
+      text-align: center;
     }
     header {
       background-color: #ffb6c1;
@@ -23,23 +24,6 @@
       margin: 0;
       font-size: 26px;
     }
-    .youtube-link {
-      text-align: center;
-      margin-top: 10px;
-    }
-    .youtube-link a {
-      display: inline-block;
-      background-color: #ff6f91;
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .youtube-link a:hover {
-      background-color: #ff3366;
-    }
     .container {
       max-width: 800px;
       margin: 40px auto;
@@ -47,13 +31,31 @@
       border-radius: 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       padding: 30px;
-      
+      text-align: left;
+    }
     h2 {
-      color: #ff4081;
-      margin-top: 20px;
+      color: #b3005e;
+      text-align: center;
+    }
+    p {
+      text-align: justify;
     }
     .kasus {
       margin-bottom: 25px;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    iframe {
+      width: 80%;
+      height: 400px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      border: none;
+      margin: 20px auto;
+      display: block;
     }
     footer {
       text-align: center;
@@ -63,43 +65,27 @@
       border-top: 3px solid #ff6f91;
       margin-top: 40px;
     }
-    img {
-      width: 100%;
-      border-radius: 10px;
-      margin-top: 10px;
-    }
-    font-family: 'Poppins', sans-serif;
-      background-color: #ffe4ec;
-      text-align: center;
-      color: #333;
-      margin: 0;
-      padding: 20px;
-    }
-    h2 {
-      color: #b3005e;
-    }
-    iframe {
-      width: 80%;
-      height: 400px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      border: none;
-    }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>Post 1 - ERD Intersection (5 Kasus)</h1>
+  </header>
+
   <h2>🎬 Video Saya</h2>
   <p>Tonton video YouTube langsung di blog ini!</p>
-  
+
+  <!-- Ganti ID video di bawah sesuai video kamu -->
   <iframe 
-    src="https://youtu.be/Sb9xI5fNY20?feature=shared" 
-    title="klik video ini" 
+    src="https://www.youtube.com/embed/Sb9xI5fNY20"
+    title="Video ERD Intersection oleh Tassa Safitri"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
   </iframe>
 
   <div class="container">
-    <p><b>Intersection</b> pada ERD digunakan untuk merepresentasikan hubungan <i>many-to-many</i> yang dipecah menjadi dua relasi <i>one-to-many</i> menggunakan tabel penghubung (intersection entity)lunk youtube src="https://youtu.be/Sb9xI5fNY20?feature=shared" .</p>
+    <p><b>Intersection</b> pada ERD digunakan untuk merepresentasikan hubungan <i>many-to-many</i> yang dipecah menjadi dua relasi <i>one-to-many</i> menggunakan tabel penghubung (intersection entity).</p>
 
     <div class="kasus">
       <h2>Kasus 1: Mahasiswa & Mata Kuliah</h2>
@@ -137,7 +123,4 @@
   </footer>
 
 </body>
-
 </html>
-
-
